@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<form>
+			<div id="divGeneral">
+				<label for="Titulo">Diseña tu formulario</label>
+				<select name="elementos" id="elementos">
+					<option value="">Elija un elemento</option>
+					<option value="texto" id="texto">Texto</option>
+					<option value="numero" id="numero">Numero</option>
+					<option value="email" id="email">Email</option>
+					<option value="lista" id="lista">Lista de selección</option>
+					<option value="check" id="check"
+						>Opciones no exclusivas de selección</option
+					>
+					<option value="radio" id="radio">Opciones exclusivas de selección</option>
+				</select>
+				<button onclick="elegirElemento()" id="botonCrear">Crear</button>
+			</div>
+			<div id="divTexto"></div>
+			<div id="divNum"></div>
+			<div id="divEmail"></div>
+			<div id="divLista"></div>
+			<div id="divCheck"></div>
+			<div id="divRadio"></div>
+		</form>
+		<script src="./node_modules/sweetalert/dist/sweetalert.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
